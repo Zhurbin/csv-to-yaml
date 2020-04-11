@@ -1,0 +1,23 @@
+{
+  "name": "csv-to-yaml",
+  "version": "1.0.0",
+  "description": "Convert csv to json/yaml",
+  "main": "index.js",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "lodash": "^4.17.15",
+    "remedial": "^1.0.8",
+    "remove-trailing-spaces": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 13.8.0",
+    "npm": ">= 6.13.7"
+  },
+  "author": "Alexander Zhurbin",
+  "license": "ISC"
+}
