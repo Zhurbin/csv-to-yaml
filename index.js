@@ -14,7 +14,8 @@ csv({
   const newJson = jsonArray.reduce((acc, item) => {
     const string = item.field1.replace(/\//g, ".");
 
-    const newAcc = _.set(acc, string, item.field2);
+    // Used setWith instead set, for case then numbers is a keys for object
+    const newAcc = _.setWith(acc, string, item.field2, Object);
 
     return {
       ...newAcc,
